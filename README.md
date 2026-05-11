@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# IR estate Website
 
-## Getting Started
+IR estate のコーポレートサイトです。
+Next.js App Router / TypeScript / static export / GitHub Pages 公開を前提にしています。
 
-First, run the development server:
+## Setup
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+ローカル確認:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Password Gate
 
-## Learn More
+GitHub Pages は静的ホスティングのため、サーバー側の Basic 認証は使えません。
+このサイトでは、関係者確認用の簡易パスワードゲートをクライアント側で実装しています。
+厳密な非公開運用が必要な場合は、Cloudflare Access などの認証付きホスティングを利用してください。
 
-To learn more about Next.js, take a look at the following resources:
+パスワードの SHA-256 ハッシュ生成:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run password:hash -- your-password
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+ローカル確認用:
 
-## Deploy on Vercel
+```bash
+cp .env.example .env.local
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+GitHub Actions では Repository Secret に以下を設定します。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```text
+NEXT_PUBLIC_SITE_PASSWORD_HASH
+```
+
+## Build
+
+```bash
+npm run build
+```
+
+`next.config.ts` で `output: "export"` を指定しているため、ビルド成果物は `out/` に生成されます。
+
+## Deploy
+
+GitHub Pages へのデプロイは `.github/workflows/pages.yml` で行います。
+
+必要な GitHub 設定:
+
+- Repository Settings > Pages > Source: GitHub Actions
+- Repository Settings > Secrets and variables > Actions > Secrets:
+  `NEXT_PUBLIC_SITE_PASSWORD_HASH`
+
+リポジトリページとして公開する場合は、必要に応じて Repository Variable を設定します。
+
+```text
+GITHUB_PAGES_BASE_PATH=/project-name
+```
+
+ユーザー/組織ページのルート公開であれば、通常この変数は不要です。
+
+## Branch Policy
+
+- `main`: 本番公開用ブランチ。GitHub Pages のデプロイ対象です。
+- `dev`: 作業用ブランチ。通常の修正・検証はこちらで行い、確認後に `main` へ反映します。
+
+基本フロー:
+
+```bash
+git switch dev
+# 作業・確認
+git push origin dev
+# 確認後、main にマージして本番反映
+```
+
+## Operations
+
+- 会社情報やニュースの文言は `app/page.tsx` を編集します。
+- トップページの見た目は `app/page.module.css` を編集します。
+- ヒーロー動画は `public/hero-video.mp4` を差し替えます。
+- パスワード画面は `app/PasswordGate.tsx` と `app/password-gate.module.css` を編集します。
+
+## Repository
+
+GitHub:
+
+```text
+https://github.com/irestate/project-name
+```
