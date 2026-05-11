@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const githubPagesBasePath = process.env.GITHUB_PAGES_BASE_PATH || "";
+const pagesBasePath = process.env.PAGES_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
@@ -8,10 +8,10 @@ const nextConfig: NextConfig = {
   env: {
     SITE_PASSWORD_HASH: process.env.NEXT_PUBLIC_SITE_PASSWORD_HASH || "",
   },
-  ...(process.env.GITHUB_PAGES === "true" && githubPagesBasePath
+  ...(process.env.GITHUB_PAGES === "true" && pagesBasePath
     ? {
-        basePath: githubPagesBasePath,
-        assetPrefix: githubPagesBasePath,
+        basePath: pagesBasePath,
+        assetPrefix: pagesBasePath,
       }
     : {}),
   images: {

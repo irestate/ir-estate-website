@@ -38,7 +38,7 @@ jobs:
         run: npm run build
         env:
           GITHUB_PAGES: "true"
-          GITHUB_PAGES_BASE_PATH: ${{ vars.GITHUB_PAGES_BASE_PATH }}
+          PAGES_BASE_PATH: ${{ vars.PAGES_BASE_PATH }}
           NEXT_PUBLIC_SITE_PASSWORD_HASH: ${{ secrets.NEXT_PUBLIC_SITE_PASSWORD_HASH }}
 
       - name: Upload artifact
