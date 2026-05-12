@@ -24,7 +24,7 @@ const achievements = [
 
 const propertyTypes = [
   {
-    title: "アパマン用地",
+    title: "アパマン用地・事業用地",
     image: "property-apartment-land.png",
   },
   {
@@ -88,7 +88,7 @@ export default function Home() {
           <h1>難易度の高い不動産案件に、実務で応える。</h1>
           <p className={styles.heroLead}>
             不動産会社・金融機関のための複雑案件対応パートナー。
-            アパマン用地、収益物件、再建築不可、工場等跡地、残置物あり物件・告知あり物件まで、
+            アパマン用地・事業用地、収益物件、再建築不可、工場等跡地、残置物あり物件・告知あり物件まで、
             一般流通では扱いづらい不動産案件にも柔軟に対応します。
           </p>
           <div className={styles.heroProofs} aria-label="IR estate の強み">
