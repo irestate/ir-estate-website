@@ -3,22 +3,29 @@ import PasswordGate from "./PasswordGate";
 
 const achievements = [
   {
-    area: "東京都大田区大森北",
+    area: "東京都大田区大森北一丁目",
     type: "事業用地",
-    price: "非公開",
-    feature: "テナントビル用地として",
+    feature: "不動産会社様がご所有の土地、テナントビル用地として取引",
   },
   {
-    area: "埼玉県川口市",
-    type: "工場等跡地（更地）",
-    price: "1億円〜3億円",
-    feature: "土壌汚染調査・除去を伴う案件",
+    area: "東京都江戸川区南小岩七丁目",
+    type: "事業用地",
+    feature: "確定測量・建物現況・契約不適合免責、建売用地として取引",
   },
   {
-    area: "神奈川県横浜市神奈川区",
-    type: "再建築不可（戸建）",
-    price: "2,000万円〜4,000万円",
-    feature: "接道要件を満たさない再建築不可案件",
+    area: "東京都葛飾区亀有四丁目",
+    type: "アパマン用地",
+    feature: "不動産会社様がご所有の土地、賃貸マンション用地として取引",
+  },
+  {
+    area: "東京都大田区大森",
+    type: "区分マンション",
+    feature: "残置物あり・契約不適合免責、フルリノベーション再販物件として取引",
+  },
+  {
+    area: "千葉県船橋市浜町一丁目",
+    type: "収益物件",
+    feature: "現況渡し・残置物あり・契約不適合免責、賃借人付き立退き物件として取引",
   },
 ];
 
@@ -119,10 +126,6 @@ export default function Home() {
                     <div>
                       <dt>種別</dt>
                       <dd>{item.type}</dd>
-                    </div>
-                    <div>
-                      <dt>価格帯</dt>
-                      <dd>{item.price}</dd>
                     </div>
                     <div>
                       <dt>案件の特徴</dt>
