@@ -332,6 +332,7 @@
   font-size: 18px;
   line-height: 1.35;
   text-align: center;
+  white-space: pre-line;
 }
 
 .propertyCard:nth-child(-n + 2) h3 {
