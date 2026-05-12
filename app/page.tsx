@@ -40,7 +40,7 @@ const propertyTypes = [
   },
   {
     title: "区分マンション",
-    image: "property-income.png",
+    image: "property-condo.png",
   },
   {
     title: "立退き案件",
