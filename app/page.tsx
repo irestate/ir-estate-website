@@ -25,28 +25,23 @@ const achievements = [
 const propertyTypes = [
   {
     title: "アパマン用地",
-    image:
-      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=900&q=80",
+    image: "property-apartment-land.png",
   },
   {
     title: "収益物件",
-    image:
-      "https://images.unsplash.com/photo-1460317442991-0ec209397118?auto=format&fit=crop&w=900&q=80",
+    image: "property-income.png",
   },
   {
     title: "再建築不可",
-    image:
-      "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=900&q=80",
+    image: "property-rebuild-disabled.png",
   },
   {
     title: "工場跡地",
-    image:
-      "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?auto=format&fit=crop&w=900&q=80",
+    image: "property-factory-site.png",
   },
   {
     title: "残置物の多い物件",
-    image:
-      "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?auto=format&fit=crop&w=900&q=80",
+    image: "property-leftovers.png",
   },
 ];
 
