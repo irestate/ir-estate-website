@@ -112,7 +112,6 @@ export default function Home() {
           <section id="results" className={styles.results}>
             <div className={styles.sectionHeader}>
               <h2>取引事例</h2>
-              <a href="#contact">一覧を見る</a>
             </div>
             <div className={styles.resultList}>
               {achievements.map((item) => (
