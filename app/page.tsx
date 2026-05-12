@@ -193,35 +193,55 @@ export default function Home() {
 
       <section id="service" className={styles.strengthSection}>
         <div className={styles.strengthInner}>
-          <div>
-            <p className={styles.eyebrow}>Strength</p>
-            <h2>IR estateの強み</h2>
-          </div>
-          <div className={styles.strengthCards}>
-            <article>
-              <span>01</span>
-              <h3>幅広い物件種別に対応</h3>
+          <article className={styles.serviceContent}>
+            <p className={styles.eyebrow}>Service</p>
+            <h2>事業内容</h2>
+            <div className={styles.serviceCard}>
+              <h3>不動産買取事業</h3>
               <p>
-                一般的な不動産から、権利関係や利用条件に課題がある案件まで、
-                相談初期から実務目線で整理します。
+                居住用不動産（区分MS、戸建て、土地）、事業用不動産、借地権、
+                再建築不可等々種別・規模問わずお気軽にご相談ください。
               </p>
-            </article>
-            <article>
-              <span>02</span>
-              <h3>法人間取引に適した進行</h3>
-              <p>
-                不動産会社・金融機関との連携を前提に、情報開示、条件調整、
-                スケジュール管理まで丁寧に進めます。
-              </p>
-            </article>
-            <article>
-              <span>03</span>
-              <h3>出口を見据えた判断</h3>
-              <p>
-                価格だけでなく、用途、収益性、再販可能性、リスク要因を踏まえ、
-                案件ごとに現実的な道筋を検討します。
-              </p>
-            </article>
+            </div>
+          </article>
+
+          <div className={styles.strengthContent}>
+            <div>
+              <p className={styles.eyebrow}>Strength</p>
+              <h2>IR estateの強み</h2>
+            </div>
+            <div className={styles.strengthCards}>
+              <article>
+                <span>01</span>
+                <div>
+                  <h3>幅広い物件種別に対応</h3>
+                  <p>
+                    一般的な不動産から、権利関係や利用条件に課題がある案件まで、
+                    相談初期から実務目線で整理します。
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>02</span>
+                <div>
+                  <h3>法人間取引に適した進行</h3>
+                  <p>
+                    不動産会社・金融機関との連携を前提に、情報開示、条件調整、
+                    スケジュール管理まで丁寧に進めます。
+                  </p>
+                </div>
+              </article>
+              <article>
+                <span>03</span>
+                <div>
+                  <h3>出口を見据えた判断</h3>
+                  <p>
+                    価格だけでなく、用途、収益性、再販可能性、リスク要因を踏まえ、
+                    案件ごとに現実的な道筋を検討します。
+                  </p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
