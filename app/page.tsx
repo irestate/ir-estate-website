@@ -203,6 +203,13 @@ export default function Home() {
                 再建築不可等々種別・規模問わずお気軽にご相談ください。
               </p>
             </div>
+            <div className={styles.serviceCard}>
+              <h3>コンサルティング事業</h3>
+              <p>
+                不動産売買に限らず、賃貸、建築、税務等々
+                その方にとって最適なサービスをご提案いたします。
+              </p>
+            </div>
           </article>
 
           <div className={styles.strengthContent}>

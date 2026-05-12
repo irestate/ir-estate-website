@@ -392,7 +392,6 @@
 }
 
 .serviceCard {
-  min-height: 360px;
   margin-top: 24px;
   border: 1px solid #d6e4f4;
   border-left: 5px solid #0a5da8;
@@ -400,6 +399,10 @@
   background: #ffffff;
   padding: 34px 38px;
   box-shadow: 0 18px 40px rgba(8, 35, 74, 0.06);
+}
+
+.serviceCard + .serviceCard {
+  margin-top: 16px;
 }
 
 .serviceCard h3 {
