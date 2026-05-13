@@ -159,36 +159,40 @@ export default function Home() {
             </div>
           </section>
 
-          <aside id="company" className={styles.company}>
-            <h2>会社情報・対応エリア</h2>
-            <div className={styles.companyBlock}>
-              <h3>免許番号</h3>
-              <p>千葉県知事（1）第18184号</p>
+          <aside id="company" className={styles.companyArea}>
+            <div className={styles.sectionHeader}>
+              <h2>会社情報・対応エリア</h2>
             </div>
-            <div className={styles.companyBlock}>
-              <h3>所在地</h3>
-              <p>千葉県船橋市本町7-23-10-406</p>
+            <div className={styles.company}>
+              <div className={styles.companyBlock}>
+                <h3>免許番号</h3>
+                <p>千葉県知事（1）第18184号</p>
+              </div>
+              <div className={styles.companyBlock}>
+                <h3>所在地</h3>
+                <p>千葉県船橋市本町7-23-10-406</p>
+              </div>
+              <div className={styles.companyBlock}>
+                <h3>連絡先</h3>
+                <p>
+                  代表電話: 047-767-0365
+                  <br />
+                  Email: irestate@ir-estate.jp
+                </p>
+              </div>
+              <div className={styles.companyBlock}>
+                <h3>対応エリア</h3>
+                <p>
+                  首都圏（東京都・神奈川県・埼玉県・千葉県）
+                  <br />
+                  その他エリアもご相談ください。
+                </p>
+              </div>
+              <a id="contact" className={styles.companyCta} href="mailto:info@ir-estate.jp">
+                法人間取引のご相談
+                <span aria-hidden="true">›</span>
+              </a>
             </div>
-            <div className={styles.companyBlock}>
-              <h3>連絡先</h3>
-              <p>
-                代表電話: 047-767-0365
-                <br />
-                Email: irestate@ir-estate.jp
-              </p>
-            </div>
-            <div className={styles.companyBlock}>
-              <h3>対応エリア</h3>
-              <p>
-                首都圏（東京都・神奈川県・埼玉県・千葉県）
-                <br />
-                その他エリアもご相談ください。
-              </p>
-            </div>
-            <a id="contact" className={styles.companyCta} href="mailto:info@ir-estate.jp">
-              法人間取引のご相談
-              <span aria-hidden="true">›</span>
-            </a>
           </aside>
         </div>
       </section>

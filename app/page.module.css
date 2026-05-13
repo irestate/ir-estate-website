@@ -231,7 +231,6 @@
 }
 
 .sectionHeader h2,
-.company h2,
 .strengthInner h2,
 .newsInner h2 {
   font-family: Georgia, "Yu Mincho", "Hiragino Mincho ProN", serif;
@@ -248,7 +247,8 @@
 }
 
 .results,
-.properties {
+.properties,
+.companyArea {
   display: flex;
   min-width: 0;
   flex-direction: column;
@@ -339,18 +339,14 @@
 }
 
 .company {
-  align-self: start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   border: 1px solid #a9c5e3;
   border-radius: 6px;
   background: #ffffff;
   padding: 24px 24px 28px;
   box-shadow: 0 18px 40px rgba(8, 35, 74, 0.08);
-}
-
-.company h2 {
-  border-left: 5px solid #0a5da8;
-  padding-left: 16px;
-  font-size: 24px;
 }
 
 .companyBlock {
@@ -373,7 +369,7 @@
 
 .companyCta {
   width: 100%;
-  margin-top: 24px;
+  margin-top: auto;
   min-height: 56px;
   border-color: #003875;
   background: #003875;
@@ -514,7 +510,7 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .company {
+  .companyArea {
     grid-column: span 2;
   }
 }
@@ -597,7 +593,7 @@
     padding: 20px;
   }
 
-  .company {
+  .companyArea {
     grid-column: auto;
   }
 
