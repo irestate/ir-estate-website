@@ -256,6 +256,8 @@
 
 .resultList {
   display: grid;
+  flex: 1;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
   gap: 8px;
 }
 
@@ -314,11 +316,6 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.propertyCard:nth-child(-n + 2) .propertyImage {
-  height: 190px;
-  background-size: contain;
 }
 
 .propertyCard h3 {
