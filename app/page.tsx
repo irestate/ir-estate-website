@@ -68,6 +68,7 @@ export default function Home() {
       <main className={styles.page}>
       <header className={styles.header}>
         <a className={styles.logo} href="#top" aria-label="IR estate トップ">
+          <img className={styles.logoMark} src="ir-logo-mark.png" alt="" aria-hidden="true" />
           IR estate
         </a>
         <nav className={styles.nav} aria-label="主要ナビゲーション">
