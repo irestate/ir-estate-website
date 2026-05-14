@@ -18,10 +18,10 @@
   background: linear-gradient(
     90deg,
     #ffffff 0,
-    #ffffff 250px,
-    rgba(255, 255, 255, 0.9) 282px,
-    rgba(0, 31, 77, 0.82) 342px,
-    #001f4d 398px,
+    #ffffff 214px,
+    rgba(255, 255, 255, 0.92) 228px,
+    rgba(0, 31, 77, 0.88) 248px,
+    #001f4d 262px,
     #001f4d 100%
   );
   color: #ffffff;
@@ -523,10 +523,10 @@
     background: linear-gradient(
       90deg,
       #ffffff 0,
-      #ffffff 230px,
-      rgba(255, 255, 255, 0.9) 258px,
-      rgba(0, 31, 77, 0.82) 316px,
-      #001f4d 370px,
+      #ffffff 204px,
+      rgba(255, 255, 255, 0.92) 218px,
+      rgba(0, 31, 77, 0.88) 238px,
+      #001f4d 252px,
       #001f4d 100%
     );
   }
@@ -551,10 +551,10 @@
     background: linear-gradient(
       90deg,
       #ffffff 0,
-      #ffffff 200px,
-      rgba(255, 255, 255, 0.9) 226px,
-      rgba(0, 31, 77, 0.82) 282px,
-      #001f4d 334px,
+      #ffffff 172px,
+      rgba(255, 255, 255, 0.92) 186px,
+      rgba(0, 31, 77, 0.88) 206px,
+      #001f4d 220px,
       #001f4d 100%
     );
   }
