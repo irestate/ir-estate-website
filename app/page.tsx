@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./page.module.css";
 
 const achievements = [
@@ -66,8 +67,14 @@ export default function Home() {
     <main className={styles.page}>
       <header className={styles.header}>
         <a className={styles.logo} href="#top" aria-label="IR estate トップ">
-          <img className={styles.logoMark} src="ir-logo-mark.png" alt="" aria-hidden="true" />
-          IR estate
+          <Image
+            className={styles.logoImage}
+            src="/ir-estate-logo-horizontal.png"
+            alt="IR estate"
+            width={1889}
+            height={833}
+            priority
+          />
         </a>
         <nav className={styles.nav} aria-label="主要ナビゲーション">
           <a href="#top">トップ</a>

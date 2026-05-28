@@ -29,24 +29,15 @@
 
 .logo {
   display: inline-flex;
-  align-items: flex-end;
-  gap: 10px;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 38px;
-  line-height: 1;
-  letter-spacing: 0;
+  align-items: center;
   color: #001f4d;
   white-space: nowrap;
 }
 
-.logoMark {
+.logoImage {
   display: block;
-  box-sizing: border-box;
-  width: 44px;
-  height: 44px;
-  padding: 5px;
-  border-radius: 6px;
-  background: #ffffff;
+  width: clamp(150px, 16vw, 210px);
+  height: auto;
   object-fit: contain;
 }
 
@@ -562,12 +553,11 @@
   }
 
   .logo {
-    font-size: 30px;
+    align-self: center;
   }
 
-  .logoMark {
-    width: 36px;
-    height: 36px;
+  .logoImage {
+    width: 146px;
   }
 
   .headerCta {
