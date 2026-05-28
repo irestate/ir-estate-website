@@ -61,7 +61,7 @@ GitHub Pages へのデプロイは `.github/workflows/pages.yml` で行います
 リポジトリページとして公開する場合は、必要に応じて Repository Variable を設定します。
 
 ```text
-PAGES_BASE_PATH=/project-name
+PAGES_BASE_PATH=/ir-estate-website
 ```
 
 ユーザー/組織ページのルート公開であれば、通常この変数は不要です。
@@ -92,5 +92,5 @@ git push origin dev
 GitHub:
 
 ```text
-https://github.com/irestate/project-name
+https://github.com/irestate/ir-estate-website
 ```
