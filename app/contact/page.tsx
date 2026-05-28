@@ -33,7 +33,7 @@ export default function ContactPage() {
           <h1>法人間取引のご相談</h1>
           <p>
             物件概要、所在地、ご相談内容など、分かる範囲でご入力ください。
-            内容を確認のうえ、担当者よりご連絡いたします。
+            守秘を前提に内容を確認し、担当者よりご連絡いたします。
           </p>
         </div>
       </section>
@@ -89,6 +89,17 @@ export default function ContactPage() {
           <label>
             <span>ご相談内容</span>
             <textarea name="ご相談内容" rows={8} required />
+          </label>
+
+          <p className={styles.policyText}>
+            送信内容はお問い合わせ対応の目的で利用します。詳しくは
+            <Link href="/privacy/">プライバシーポリシー</Link>
+            をご確認ください。
+          </p>
+
+          <label className={styles.consent}>
+            <input name="個人情報の取り扱いへの同意" type="checkbox" value="同意する" required />
+            <span>個人情報の取り扱いに同意します</span>
           </label>
 
           <button className={styles.submitButton} type="submit">
