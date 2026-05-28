@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 const achievements = [
@@ -84,10 +85,10 @@ export default function Home() {
           <a href="#company">会社情報</a>
           <a href="#news">ニュース</a>
         </nav>
-        <a className={styles.headerCta} href="#contact">
+        <Link className={styles.headerCta} href="/contact/">
           法人間取引のご相談
           <span aria-hidden="true">›</span>
-        </a>
+        </Link>
       </header>
 
       <section id="top" className={styles.hero}>
@@ -198,10 +199,10 @@ export default function Home() {
                   その他エリアもご相談ください。
                 </p>
               </div>
-              <a id="contact" className={styles.companyCta} href="mailto:info@ir-estate.jp">
+              <Link id="contact" className={styles.companyCta} href="/contact/">
                 法人間取引のご相談
                 <span aria-hidden="true">›</span>
-              </a>
+              </Link>
             </div>
           </aside>
         </div>
