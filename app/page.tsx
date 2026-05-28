@@ -1,5 +1,4 @@
 import styles from "./page.module.css";
-import PasswordGate from "./PasswordGate";
 
 const achievements = [
   {
@@ -64,8 +63,7 @@ const strengths = [
 
 export default function Home() {
   return (
-    <PasswordGate>
-      <main className={styles.page}>
+    <main className={styles.page}>
       <header className={styles.header}>
         <a className={styles.logo} href="#top" aria-label="IR estate トップ">
           <img className={styles.logoMark} src="ir-logo-mark.png" alt="" aria-hidden="true" />
@@ -275,7 +273,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      </main>
-    </PasswordGate>
+    </main>
   );
 }

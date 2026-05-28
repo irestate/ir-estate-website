@@ -16,30 +16,6 @@ npm run dev
 http://localhost:3000
 ```
 
-## Password Gate
-
-GitHub Pages は静的ホスティングのため、サーバー側の Basic 認証は使えません。
-このサイトでは、関係者確認用の簡易パスワードゲートをクライアント側で実装しています。
-厳密な非公開運用が必要な場合は、Cloudflare Access などの認証付きホスティングを利用してください。
-
-パスワードの SHA-256 ハッシュ生成:
-
-```bash
-npm run password:hash -- your-password
-```
-
-ローカル確認用:
-
-```bash
-cp .env.example .env.local
-```
-
-GitHub Actions では Repository Secret に以下を設定します。
-
-```text
-NEXT_PUBLIC_SITE_PASSWORD_HASH
-```
-
 ## Build
 
 ```bash
@@ -55,8 +31,6 @@ GitHub Pages へのデプロイは `.github/workflows/pages.yml` で行います
 必要な GitHub 設定:
 
 - Repository Settings > Pages > Source: GitHub Actions
-- Repository Settings > Secrets and variables > Actions > Secrets:
-  `NEXT_PUBLIC_SITE_PASSWORD_HASH`
 
 リポジトリページとして公開する場合は、必要に応じて Repository Variable を設定します。
 
@@ -85,7 +59,6 @@ git push origin dev
 - 会社情報やニュースの文言は `app/page.tsx` を編集します。
 - トップページの見た目は `app/page.module.css` を編集します。
 - ヒーロー動画は `public/hero-video.mp4` を差し替えます。
-- パスワード画面は `app/PasswordGate.tsx` と `app/password-gate.module.css` を編集します。
 
 ## Repository
 
