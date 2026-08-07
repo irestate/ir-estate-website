@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -25,7 +26,21 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${geistSans.variable} ${geistMono.variable}`}>
-      <body>{children}</body>
+      <head>
+        <link
+          rel="stylesheet"
+          href="https://faq-saas-widget.pages.dev/faq-chatbot.css"
+        />
+      </head>
+      <body>
+        {children}
+        <Script
+          src="https://faq-saas-widget.pages.dev/faq-chatbot.js"
+          data-tenant="irestate"
+          data-api-url="https://faq-saas-api.takashi-matsumoto-jp.workers.dev"
+          strategy="afterInteractive"
+        />
+      </body>
     </html>
   );
 }
