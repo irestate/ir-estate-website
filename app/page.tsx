@@ -284,10 +284,6 @@ export default function Home() {
                 <p>株式会社 IR estate</p>
               </div>
               <div className={styles.companyBlock}>
-                <h3>所在地</h3>
-                <p>千葉県船橋市本町7-23-10-406</p>
-              </div>
-              <div className={styles.companyBlock}>
                 <h3>連絡先</h3>
                 <p>
                   代表電話: 047-767-0365
